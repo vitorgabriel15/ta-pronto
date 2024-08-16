@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 440;
+}
+
+:root {
+    --celereiro-vermelho: rgb(94, 13, 144);
+    --tijolo-de-fogo: rgb(0, 0, 0);
+    --chicote-de-mamao: rgb(57, 2, 81);
+    --azul-da-prussia: rgb(255, 255, 255);
+    --superioridade-aerea-azul: rgb(188, 21, 203);
+    --fonte-titulo: "Platypi", serif;
+    --fonte-texto: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-color: var(--celereiro-vermelho);
+    color: var(--superioridade-aerea-azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fonte-texto);
+}
+
+.caixa-principal {
+    background-color: var(--tijolo-de-fogo);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px; /* Arredondar bordas do container principal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionar sombra ao container */
+}
+
+.titulo {
+    color: var(--chicote-de-mamao);
+    font-family: var(--fonte-titulo);
+    margin-bottom: 20px;
+    font-size: 2em; /* Ajustar o tamanho conforme necessário */
+}
+
+button {
+    background-color: var(--celereiro-vermelho);
+    color: var(--azul-da-prussia);
+    border: 2px solid var(--azul-da-prussia); /* Bordas do botão */
+    border-radius: 25px; /* Bordas arredondadas dos botões */
+    padding: 15px 25px; /* Padding para criar um botão mais largo */
+    font-size: 1em; /* Ajuste o tamanho da fonte conforme necessário */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Adiciona transição suave */
+    margin: 10px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do botão */
+}
+
+button:hover {
+    background-color: var(--chicote-de-mamao);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada no hover */
+}
